@@ -1,0 +1,72 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: calc(50px + 2vh);
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .navbar ul{
+    width: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .navbar ul li{
+    display: inline-block;
+    text-align: left;
+    font-size: 17px;
+  }
+  
+  .navbar ul li a{
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--for-text, #353546);
+    font-size: calc(7px + 1vw);
+    font-weight: 400;
+  }
+  .navbar ul li a::after{
+    content: '';
+    border-radius: 2px;
+    background: linear-gradient(121deg, #19A5FF -26.9%, rgba(64, 106, 255, 0.00) 115.72%);
+    height: 3px;
+    display: block;
+    width: 0;
+    transition: 0.5s;
+  }
+  .navbar ul li a:hover{
+    background: var(--gred2, linear-gradient(153deg, #19A5FF 16.85%, rgba(64, 106, 255, 0.00) 118.63%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .navbar ul li a:hover::after{
+    width: 100%;
+
+    
+  } 
+  .hire{
+    display: flex;
+    margin-right: 5%;
+    height: 71%;
+    padding: 0px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: calc(8px + 1vw);
+    font-style: normal;
+    line-height: 71px;
+    border-radius: 20px;
+    background: var(--3, #406AFF);
+  }

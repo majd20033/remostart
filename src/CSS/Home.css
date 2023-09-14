@@ -1,0 +1,366 @@
+
+/* Design the first part of home page */
+.First{
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.First img{
+    width: 43%;
+}
+.First_left_part{
+    width: 57%;
+    
+}
+.First p:nth-of-type(1) {
+    color: #353546;
+    font-family: Inter;
+    font-size: calc(30px + 2vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+.First p:nth-of-type(1) span:nth-of-type(1){
+    background: linear-gradient(144deg, #19A5FF 21.08%, rgb(13 28 159 / 33%) 75.66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.First_left_part p:nth-of-type(1) span:nth-of-type(2){
+    color: #353546;
+
+    font-weight: 700;
+
+}
+.First_left_part p:nth-of-type(1) span:nth-of-type(3){
+    background: linear-gradient(105deg, #19A5FF 79%, #406AFF 93.66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 800;
+
+    }
+    
+.First_left_part p:nth-of-type(2){
+    color: var(--for-text, #353546);
+    font-family: Inter;
+
+    font-size: calc(8px + 1vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    }
+.First_left_part p:nth-of-type(2) span{
+    color: var(--for-text, #353546);
+    
+    font-weight: 700;
+
+}
+.Price_button{
+    position: relative;
+    width: 28%;
+}
+.Price_button:hover .Price {
+    transform: rotate(0) translate(1px, -11px);
+}
+.Price_button div:first-of-type{
+    border-radius: 30px;
+    position: absolute;
+    border: 1px solid var(--for-text, #353546);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.28);
+    width: 100%;
+    padding: 0 30px;
+    height: 100%;
+    top: -12px;
+}
+.Price{
+    border-radius: 30px;
+    background: #406AFF;
+    box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.28);
+    display: flex;
+    width: 100%;
+    font-size: calc(2px + 1vw);
+    height: 100%;
+    margin-top: 51px;
+    transform: rotate(6.198deg);
+    color: #FFF;
+    font-family: Inter;
+    line-height: 30px;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    transition: 0.7s;
+}
+/* Design the end in first part of home page */
+.end_first{
+    background: var(--gred-for-30-opacity, linear-gradient(299deg, rgba(101, 135, 255, 0.30) -13.1%, rgba(255, 255, 255, 0.30) 92.48%));
+    width: 100%;
+    height: 308px;
+    display: flex;
+    margin-top: 103px;
+    flex-direction: column;
+
+}
+.total{
+    display: inline-flex;
+    gap: 65px;
+    margin: auto;
+}
+.total_part{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.total_part h2{
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0;
+}
+.total_part h5{
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0;
+    
+}
+.prands{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-bottom: 14px;
+}
+/* ---------------------------------------------------------- */
+/* our projects */
+/* --------------------------------------------------------------- */
+
+.ourProjects{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14vh;
+}
+.ourProjects h1{
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; 
+}
+.ourProjects .ourProject-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+}
+.ourProjects .ourProject-content> img{
+    width: 50%;
+}
+.ourProjects .ourProject-content .treval{
+    width: 50%;
+    position: relative;
+    margin-top: -9%;
+}
+.ourProjects .ourProject-content .treval >nav {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 36px;
+    position: relative;
+}
+.ourProjects .ourProject-content .treval > nav h2{
+    transform: rotate(-5.478deg);
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+}
+.ourProjects .ourProject-content .treval > nav > svg{
+
+    top: 29%;
+    left: 110%;
+    position: absolute;
+
+}
+
+.ourProjects .ourProject-content .treval > svg{
+    width: 100%;
+    margin-top: -18%;
+}
+.ourProjects .ourProject-content .treval .treval_content{
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(70, 161, 239, 0.30);
+    width: 86%;
+    height: 70%;
+    position: absolute;
+    display: flex;
+    padding: 31px;
+    bottom: -4%;
+    left: -8%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.ourProjects .ourProject-content .treval .treval_content > svg{
+    position: absolute;
+    top: -5%;
+    left: 39%;
+}    
+
+.ourProjects .ourProject-content .treval .treval_content > nav h1{
+    color: var(--3, #406AFF);
+    font-family: Inter;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 71px;
+}
+.ourProjects .ourProject-content .treval .treval_content .button{
+    border-radius: 30px;
+    border: 1px solid var(--3, #406AFF);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.28);
+    display: flex;
+    width: 232px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.ourProjects .ourProject-content .treval .treval_content .button span{
+    color: var(--3, #406AFF);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+.ourProjects > svg:nth-last-of-type(1){
+    position: absolute;
+    bottom: -1%;
+    z-index: -1;
+    width: 100%;
+}
+/* --------------------------------------------------------------- */
+/* Services page  */
+/* ------------------------------------------------------------------- */
+.services{
+    display: flex;
+    background: rgba(25, 165, 255, 0.07);
+    flex-direction: column;
+    align-items: center;
+    padding: 57px 0px;
+    margin: 6% 0;
+}
+.services h1 {
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.services-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 85px 0;
+    gap : 20px;
+    width: 85%;
+}
+.grid{
+    border-radius: 35px;
+    opacity: 0.9;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.13);
+    display: flex;
+    padding: 0px 50px 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+.grid:hover{
+    border-radius: 35px;
+background: var(--2, #84d0ff);
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.13);
+}
+/* --------------------------------------------------------------- */
+/* About Us page  */
+/* ------------------------------------------------------------------- */
+.Aboutus{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.Aboutus > img{
+    width: 45%;
+}
+.Aboutus .aboutContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#root > div.Aboutus > div > nav > h1{
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+#root > div.Aboutus > div > nav > p{
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.Aboutus .aboutContent .solutions > div > nav{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    align-items: center;
+    
+}
+.Aboutus .aboutContent .solutions > div > nav >nav{
+    width: 75%;
+}
+.Aboutus .aboutContent .solutions > div > nav >nav h2{
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: -8px;
+}
+
+.Aboutus .aboutContent .solutions > div > nav >nav  p{
+    color: var(--for-text, #353546);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
