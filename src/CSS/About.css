@@ -1,15 +1,155 @@
-.wave{
-    position: relative;
+#AboutUs .wave {
+	position: relative;
 }
-.wave svg:nth-child(1){
-    width: 100%;
-    flex-shrink: 0;
-    fill: var(--gred-for-30-opacity, linear-gradient(299deg, rgba(101, 135, 255, 0.30) -13.1%, rgba(255, 255, 255, 0.30) 92.48%));
+#AboutUs .wave svg:nth-child(1) {
+	flex-shrink: 0;
+	fill: var(
+		--gred-for-30-opacity,
+		linear-gradient(
+			299deg,
+			rgba(101, 135, 255, 0.3) -13.1%,
+			rgba(255, 255, 255, 0.3) 92.48%
+		)
+	);
 }
-.wave svg:nth-child(2){
-    position: absolute;
-    fill: #FFF;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+#AboutUs .wave svg:nth-child(2) {
+	position: absolute;
+	fill: #fff;
+
+	bottom: 0;
+	left: 0;
+}
+#AboutUs #first {
+	position: relative;
+	overflow: hidden;
+}
+#AboutUs #title {
+	position: absolute;
+}
+/* --------------------------------------------------------------------------------- */
+/*  "dev" "Solution" */
+/* --------------------------------------------------------------------------------- */
+#AboutUs > section.dev,
+#AboutUs > section.Solution {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 140px;
+	overflow: hidden;
+}
+#AboutUs > section.Solution{
+	flex-direction: row;
+
+
+}
+#AboutUs > section.dev > img,
+#AboutUs > section.Solution > img {
+	height: 67vh;
+}
+#AboutUs > section.dev > div ,
+#AboutUs > section.Solution> div{
+	width: 377px;
+}
+#AboutUs > section.dev > div > nav:nth-child(1),
+#AboutUs > section.Solution > div > nav:nth-child(1) > h2 {
+	color: var(--dark-gray, #454654);
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 30px;
+}
+#AboutUs > section.Solution > div > nav:nth-child(1){
+	text-align: right;
+}
+#AboutUs > section.dev > div > nav:nth-child(2) > h1,
+#AboutUs > section.Solution > div > nav:nth-child(2) > h1 {
+	color: var(--2, #19a5ff);
+
+	font-size: 40px;
+
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 0;
+}
+#AboutUs > section.dev > div > nav:nth-child(2) > p,
+#AboutUs > section.Solution > div > nav:nth-child(2) > p {
+	color: var(--for-text, #353546);
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 0;
+}
+/* --------------------------------------------------------------------------------- */
+/*  Our products */
+/* --------------------------------------------------------------------------------- */
+#AboutUs > section.OurProducts{
+	width: 85%;
+    margin: auto;
+    margin-top: 140px;
+}
+#AboutUs > section.OurProducts > nav > h2{
+	color: var(--for-text, #353546);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+#AboutUs #content{
+	display: flex;
+    width: 96%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    flex-direction: row-reverse;
+    border-radius: 16px;
+    background: var(--4, #EEEDED);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    align-items: center;
+}
+#content > nav{
+	width: 360px;
+}
+#content > nav > h1{
+	color: var(--2, #19A5FF);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+#content > nav > p{
+	color: var(--for-text, #353546);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+}
+#content > img{
+	height: 75dvh;
+}
+#content > ul > li{
+	display: block;
+    color: var(--for-text, #353546);
+    font-size: 22px;
+    font-weight: 500;
+	margin-bottom: 64%;
+	transition: 0.5s;
+}
+#content > ul > li:hover{
+	color: var(--2, #19A5FF);
+	cursor: pointer;
+}
+#content > ul > li::after{
+	content: "";
+	border-radius: 2px;
+    background: #19A5FF;;
+    height: 3px;
+    display: block;
+    width: 0;
+    transition: 0.5s;
+}
+#content > ul > li:hover::after{
+	width: 100%;
 }

@@ -1,0 +1,21 @@
+
+#title {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	top: 0;
+	text-align: center;
+}
+#title > h1 {
+	color: var(--for-text, #353546);
+    margin-bottom: 0;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: normal;
+}
+ #title > p{
+    color: #4A5568;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px; 
+}

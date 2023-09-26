@@ -1,34 +1,4 @@
-.navbar{
-  position:absolute;
-  width: 90%;
-  margin: 40px 5%;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-}
-ul li{
-  display: inline-block;
-  font-size: 17px;
-  margin: 0 0.4vw;
-  text-transform: uppercase;
-}
- ul li a{
-  font-family: 'Times New Roman', Times, serif;
-  color: aliceblue;
-  text-decoration: none;
-  position: relative;
-  padding: 0.2em 0;
-}
-ul li a::after{
-  content: '';
-  background-color: rgb(255, 102, 0);
-  display: block;
-  height: 2px;
-  width: 0;
-  margin: auto;
-  transition: 0.5s;
-}
- ul li a:hover::after{
-  width: 100%;
-  
+* {
+	font-family: Inter;
+	font-style: normal;
 }

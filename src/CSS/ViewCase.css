@@ -1,0 +1,62 @@
+#viewCase > img{
+    width: 100%;
+}
+#figtree > div,
+#color > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: relative;
+}
+#figtree > div::after,
+#color > div:nth-of-type(1)::after{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 2px;
+    background: #C4C4C4;
+}
+#figtree > div > h1{
+    color: var(--color-1, #343A40);
+    font-family: Figtree;
+    font-size: calc(130px + 2vw);
+    font-weight: 700;
+    margin: -19px 0;
+}
+#figtree > div > h2,
+#color > div:nth-of-type(1) > h2 {
+    color: var(--color-1, #343A40);
+    font-family: Figtree;
+    font-size: calc(3px + 6vw);
+    font-weight: 600;
+    margin: 5px;
+}
+#figtree > div > h3,
+#color > div:nth-of-type(1):nth-of-type(1) > h3{
+    color: var(--color-1, #343A40);
+    font-family: Figtree;
+    font-size: calc(7px + 4vw);
+    font-weight: 300;
+    margin: 0;
+    
+}
+
+#figtree > nav{
+    color: var(--color-1, #343A40);
+    position: relative;
+    top: 120px;
+    font-family: Figtree;
+    font-size: calc(3px + 3vw);
+    font-weight: 300;
+    line-height: normal;
+    margin: auto;
+    width: 80%;
+}
+#figtree > svg{
+    position: relative;
+    bottom: -81px;
+}
+#color > img{
+    position: absolute;
+    right: 0;
+}

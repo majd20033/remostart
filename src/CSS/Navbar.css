@@ -43,14 +43,17 @@
     width: 0;
     transition: 0.5s;
   }
-  .navbar ul li a:hover{
+  .navbar ul li a:hover,
+  .active{
     background: var(--gred2, linear-gradient(153deg, #19A5FF 16.85%, rgba(64, 106, 255, 0.00) 118.63%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-    
+  
+  .navbar ul li a:hover::after {
+    width: 100%; 
   } 
   .hire{
     display: flex;
@@ -68,3 +71,56 @@
     border-radius: 20px;
     background: var(--3, #406AFF);
   }
+/* Add these styles for mobile menu */
+.navbar.mobile-menu-open {
+  height: auto;
+  padding: 20px 0;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle svg {
+  fill: #000000;
+}
+
+.menu.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:calc(50px + 2vh);
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+}
+
+.menu.open li {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.menu.open a {
+  color: #353546;
+  font-size: 20px;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  #root > div.navbar > img{
+    width: 80px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .hire {
+    display: none;
+  }
+}
