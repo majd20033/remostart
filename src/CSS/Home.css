@@ -921,7 +921,10 @@
 	#Home>section.reviews>div:nth-child(3) {
 		position: static;
 		width: 100%;
-		padding: 0%;
+		
 		margin-top: -25px;
+	}
+	#Home > section.reviews > div:nth-child(3) > div{
+		padding:0;
 	}
 }
