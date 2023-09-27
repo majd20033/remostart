@@ -5,7 +5,7 @@
 
 #root > section.footer {
 	position: relative;
-	margin-top: 139px;
+
 }
 
 #root > section.footer > section:nth-child(1) {
@@ -13,36 +13,41 @@
 	display: flex;
 	justify-content: space-evenly;
 	padding-bottom: 100px;
+	column-gap:60px;
+	flex-wrap: wrap;
 }
 
 #root > section.footer > section:nth-child(1) > div > h3 {
 	color: #fff;
-	font-size: 22px;
+	font-size: calc(7px + 1vw);
 	font-weight: 600;
 }
 
 #root > section.footer > section:nth-child(1) > div > h5 {
 	color: #fff;
-	font-size: 17px;
+	font-size: calc(3px + 1vw);
 	font-weight: 100;
-	line-height: 40px;
+	line-height: 170%;
 	margin: 0;
 }
 
 #root > section.footer > section:nth-child(1) > div:nth-child(5) > nav {
 	display: flex;
 	align-items: flex-end;
-	margin-top: 18px;
+	line-height: 200%;
 }
 
 #root > section.footer > section:nth-child(1) > div:nth-child(5) > nav > span {
 	color: #fff;
 	font-family: Inter;
-	font-size: 18px;
+	font-size: calc(3px + 1vw);
 	font-style: normal;
 	font-weight: 400;
 	text-align: center;
 	margin-left: 24px;
+}
+#root > section.footer > section:nth-child(1) > div:nth-child(5) > nav > svg{
+	width: 10%;
 }
 
 #root > section.footer > section:nth-child(2) {
@@ -63,9 +68,7 @@
 #root > section.footer > section:nth-child(2) > h6 {
 	margin: auto;
 	color: #fff;
-	font-size: 14px;
+	font-size: calc(1px + 1vw);
 	font-weight: 400;
 }
-@media screen and (max-width: 300px) {
-  
-}
+

@@ -79,13 +79,7 @@
 	flex-direction: column;
 }
 
-.carts>.cart {
-	width: 22%;
-	margin: auto;
-	display: flex;
-	gap: 15px;
-	flex-direction: column;
-}
+
 
 #careers>div>div>img {
 	width: 260px;

@@ -41,7 +41,7 @@ function Home() {
 					<p>
 						We are a team of 150+
 						<span> software engineers & Designers </span>
-						ready to Build & maintenance your mobile and web application.
+						ready to <br /> Build & maintenance your mobile and web application.
 					</p>
 					<div className="Price_button">
 						<div></div>
@@ -272,7 +272,6 @@ function Home() {
 						<svg
 							width="703"
 							height="589"
-							viewBox="0 0 703 589"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -774,11 +773,11 @@ function Home() {
 			</section>
 			{/* ---------------Aboutus------------- */}
 			<section className="Aboutus">
-				<img src={require("../img/aboutUs_HomePage.png")} alt="" />
 				<div className="aboutContent">
 					<Title
 						Title="About Us"
-						FirstP="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+						FirstP="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  "
+						SecondP="labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
 					/>
 
 					<div className="solutions">
@@ -812,8 +811,9 @@ function Home() {
 									<h2>Start with your Ideas</h2>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation.{" "}
+										do eiusmod tempor incididunt ut <br /> labore et dolore
+										magna aliqua. Ut enim ad minim veniam, quis nostrud
+										exercitation.{" "}
 									</p>
 								</nav>
 							</nav>
@@ -845,8 +845,9 @@ function Home() {
 									<h2>Transform Idea To Reality</h2>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation.{" "}
+										do eiusmod tempor incididunt ut <br /> labore et dolore
+										magna aliqua. Ut enim ad minim veniam, quis nostrud
+										exercitation.{" "}
 									</p>
 								</nav>
 							</nav>
@@ -880,14 +881,16 @@ function Home() {
 									</h2>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation.{" "}
+										do eiusmod tempor incididunt ut <br /> labore et dolore
+										magna aliqua. Ut enim ad minim veniam, quis nostrud
+										exercitation.{" "}
 									</p>
 								</nav>{" "}
 							</nav>
 						</div>
 					</div>
 				</div>
+				<img src={require("../img/aboutUs_HomePage.png")} alt="" />
 			</section>
 			{/* ---------------ٍReviews------------- */}
 			<section className="reviews">
@@ -1360,7 +1363,6 @@ function Home() {
 							xmlns="http://www.w3.org/2000/svg"
 							width="78"
 							height="669"
-							viewBox="0 0 78 669"
 							fill="none">
 							<path
 								d="M41.2208 0H0V669H73.6479C66.3197 652 49.3551 612.5 40.1216 590.5C28.5798 563 21.9844 528.5 13.7403 477.5C5.49611 426.5 41.2208 339 42.8697 333.5C44.5185 328 70.8998 281.5 76.9455 192.5C81.7821 121.3 55.1443 34.5 41.2208 0Z"

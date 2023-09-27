@@ -1,8 +1,7 @@
-
-
 /* Design the first part of home page */
-.First {
-	width: 85%;
+
+#Home > section.First{
+	width: 90%;
 	margin: auto;
 	margin-top: 5%;
 	display: flex;
@@ -11,28 +10,27 @@
 }
 
 .First img {
-	width: 43%;
+	width: calc(290px + 10vw);
+	margin: auto;
 }
 
 .First_left_part {
-	width: 57%;
+	margin: auto;
 }
 
 .First p:nth-of-type(1) {
 	color: #353546;
 
-	font-size: calc(30px + 2vw);
+	font-size: calc(9px + 4vw);
 
 	font-weight: 400;
 	line-height: 56px;
 }
 
 .First p:nth-of-type(1) span:nth-of-type(1) {
-	background: linear-gradient(
-		144deg,
-		#19a5ff 21.08%,
-		rgb(13 28 159 / 33%) 75.66%
-	);
+	background: linear-gradient(144deg,
+			#19a5ff 21.08%,
+			rgb(13 28 159 / 33%) 75.66%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -57,7 +55,7 @@
 .First_left_part p:nth-of-type(2) {
 	color: var(--for-text, #353546);
 
-	font-size: calc(8px + 1vw);
+	font-size: calc(6px + 1vw);
 
 	font-weight: 400;
 	line-height: 30px;
@@ -111,14 +109,10 @@
 
 /* Design the end in first part of home page */
 .end_first {
-	background: var(
-		--gred-for-30-opacity,
-		linear-gradient(
-			299deg,
-			rgba(101, 135, 255, 0.3) -13.1%,
-			rgba(255, 255, 255, 0.3) 92.48%
-		)
-	);
+	background: var(--gred-for-30-opacity,
+			linear-gradient(299deg,
+				rgba(101, 135, 255, 0.3) -13.1%,
+				rgba(255, 255, 255, 0.3) 92.48%));
 	width: 100%;
 	height: 308px;
 	display: flex;
@@ -141,7 +135,7 @@
 .total_part h2 {
 	color: var(--for-text, #353546);
 
-	font-size: 50px;
+	font-size: calc(6px + 4vw);
 
 	font-weight: 700;
 	line-height: 0;
@@ -150,7 +144,7 @@
 .total_part h5 {
 	color: var(--for-text, #353546);
 
-	font-size: 22px;
+	font-size: calc(8px + 1vw);
 
 	font-weight: 500;
 	line-height: 0;
@@ -162,93 +156,105 @@
 	margin-bottom: 14px;
 }
 
+.prands svg {
+	width: 13%;
+}
+
 /* ---------------------------------------------------------- */
 /* our projects */
 /* --------------------------------------------------------------- */
 
 .ourProjects {
-
 	position: relative;
-
-	margin-top: 14vh;
+	margin-top: 15px;
+	overflow: hidden;
+	margin-bottom: 150px;
 }
-
 
 .ourProjects .ourProject-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 68px;
+	flex-wrap: wrap;
 }
 
-.ourProjects .ourProject-content > img {
-	width: 50%;
+.ourProjects .ourProject-content>img {
+	width: calc(350px + 23vw);
 }
 
 .ourProjects .ourProject-content .treval {
-	width: 50%;
+	width: calc(176px + 28vw);
+	height: calc(150px + 70vh);
 	position: relative;
-	margin-top: -9%;
+	top: -60px;
 }
 
-.ourProjects .ourProject-content .treval > nav {
+.ourProjects .ourProject-content .treval>nav:nth-of-type(1) {
 	display: inline-flex;
-	align-items: center;
-
-	gap: 36px;
+	gap: 30px;
 	position: relative;
+	top: 11%;
+	transform: rotate(-5.478deg);
+	justify-content: center;
+	align-items: center;
 }
 
-.ourProjects .ourProject-content .treval > nav h2 {
-	transform: rotate(-5.478deg);
+.ourProjects .ourProject-content .treval>nav h2 {
 	color: var(--for-text, #353546);
 
-	font-size: 70px;
-
+	font-size: calc(3px + 6vw);
+	margin: 0;
 	font-weight: 700;
 }
 
-.ourProjects .ourProject-content .treval > nav > svg {
-	top: 29%;
-	left: 110%;
-	position: absolute;
+#Home>section.ourProjects>div.ourProject-content>div>nav:nth-child(1)>svg {
+	width: 17%;
 }
 
-.ourProjects .ourProject-content .treval > svg {
+#Home>section.ourProjects>div.ourProject-content>div>svg {
 	width: 100%;
-	margin-top: -18%;
+	height: 100%;
+	position: absolute;
+	top: 19%;
+	right: 0;
 }
 
-.ourProjects .ourProject-content .treval .treval_content {
+#Home>section.ourProjects>div.ourProject-content>div>nav.treval_content {
 	border-radius: 30px;
 	background: #fff;
 	box-shadow: 0px 4px 20px 0px rgba(70, 161, 239, 0.3);
-	width: 86%;
-	height: 70%;
+	width: 77%;
+	height: 68%;
 	position: absolute;
 	display: flex;
 	padding: 31px;
-	bottom: -4%;
-	left: -8%;
+	top: 33%;
+	left: -7%;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
 }
 
-.ourProjects .ourProject-content .treval .treval_content > svg {
+.ourProjects .ourProject-content .treval .treval_content>svg {
 	position: absolute;
 	top: -5%;
 	left: 39%;
+	width: 22%;
 }
 
-.ourProjects .ourProject-content .treval .treval_content > nav h1 {
+.ourProjects .ourProject-content .treval .treval_content>nav h1 {
 	color: var(--3, #406aff);
 
-	font-size: 45px;
+	font-size: calc(4px + 3vw);
 
 	font-weight: 700;
 	margin-bottom: 0;
 	line-height: 71px;
+}
+
+#Home>section.ourProjects>div.ourProject-content>div>nav.treval_content>nav>p {
+	font-size: (4px + 1vw);
 }
 
 .ourProjects .ourProject-content .treval .treval_content .button {
@@ -256,7 +262,7 @@
 	border: 1px solid var(--3, #406aff);
 	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.28);
 	display: flex;
-	width: 232px;
+	padding: 0px 24px;
 	height: 50px;
 	text-decoration: none;
 	justify-content: center;
@@ -273,7 +279,7 @@
 	line-height: 25px;
 }
 
-.ourProjects > svg:nth-last-of-type(1) {
+.ourProjects>svg:nth-last-of-type(1) {
 	position: absolute;
 	bottom: -1%;
 	z-index: -1;
@@ -283,7 +289,7 @@
 /* --------------------------------------------------------------- */
 /* Services page  */
 /* ------------------------------------------------------------------- */
-.services {
+#Home .services {
 	display: flex;
 	background: rgba(25, 165, 255, 0.07);
 	flex-direction: column;
@@ -292,35 +298,49 @@
 	margin: 6% 0;
 }
 
-
-
-.services-grid {
-	display: grid;
-	grid-template-columns: auto auto auto;
+#Home .services-grid {
+	display: flex;
 	margin: 85px 0;
 	gap: 20px;
 	width: 85%;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
-.grid {
+#Home .grid {
 	border-radius: 35px;
 	opacity: 0.9;
+	width: calc(75px + 15vw);
 	background: #fff;
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.13);
 	display: flex;
 	padding: 0px 50px 0px 30px;
 	justify-content: space-between;
 	align-items: center;
+	margin: auto;
 	transition: 0.5s;
 }
 
-.grid:hover {
+#Home .grid h5 {
+	color: var(--2, #19a5ff);
+	font-family: Inter;
+	font-size: calc(4px + 1vw);
+	font-style: normal;
+	font-weight: 400;
+	line-height: calc(50px + 1vw);
+	margin: 0;
+	letter-spacing: 0.22px;
+}
+
+#Home .grid svg {
+	width: 15%;
+}
+
+#Home .grid:hover {
 	border-radius: 35px;
-	background: linear-gradient(
-		299deg,
-		rgba(101, 135, 255, 0.1) -13.1%,
-		rgba(255, 255, 255, 0.1) 92.48%
-	);
+	background: linear-gradient(299deg,
+			rgba(101, 135, 255, 0.1) -13.1%,
+			rgba(255, 255, 255, 0.1) 92.48%);
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.13);
 }
 
@@ -329,51 +349,58 @@
 /* ------------------------------------------------------------------- */
 .Aboutus {
 	display: flex;
-	flex-direction: row-reverse;
 	width: 100%;
 	justify-content: center;
 	margin-bottom: 2%;
+	flex-wrap: wrap;
 }
 
-.Aboutus > img {
+.Aboutus>img {
 	width: 45%;
 }
 
 .Aboutus .aboutContent {
-	width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-#Home .Aboutus .aboutContent #title{
+
+#Home .Aboutus .aboutContent #title {
 	text-align: left;
 }
 
-.Aboutus .aboutContent .solutions > div > nav {
+#Home>section.Aboutus>div>div.solutions>h1 {
+	color: var(--for-text, #353546);
+	font-size: calc(2px + 2vw);
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.Aboutus .aboutContent .solutions>div>nav {
 	display: flex;
 	flex-direction: row;
 	gap: 2%;
 	align-items: center;
 }
 
-.Aboutus .aboutContent .solutions > div > nav > nav {
-	width: 75%;
+.Aboutus .aboutContent .solutions>div>nav>nav {
+	width: 80%;
 }
 
-.Aboutus .aboutContent .solutions > div > nav > nav h2 {
+.Aboutus .aboutContent .solutions>div>nav>nav h2 {
 	color: var(--for-text, #353546);
 
-	font-size: 18px;
+	font-size: calc(3px + 1vw);
 
 	font-weight: 400;
 	line-height: 25px;
 	margin-top: -8px;
 }
 
-.Aboutus .aboutContent .solutions > div > nav > nav p {
+.Aboutus .aboutContent .solutions>div>nav>nav p {
 	color: var(--for-text, #353546);
 
-	font-size: 12px;
+	font-size: calc(6px + 0.5vw);
 
 	font-weight: 400;
 	line-height: 16px;
@@ -389,11 +416,11 @@
 	margin-top: 8%;
 }
 
-.reviews > div:nth-of-type(1) {
+.reviews>div:nth-of-type(1) {
 	background: var(--3, #406aff);
 }
 
-.reviews > div:nth-of-type(1) > h1 {
+.reviews>div:nth-of-type(1)>h1 {
 	color: #fff;
 
 	font-size: calc(26px + 1vw);
@@ -404,7 +431,7 @@
 	margin: 8% 10%;
 }
 
-.reviews > div:nth-of-type(1) > p {
+.reviews>div:nth-of-type(1)>p {
 	color: #fff;
 
 	font-size: calc(4px + 1vw);
@@ -415,32 +442,28 @@
 	margin-left: 10%;
 }
 
-#Home > section.reviews > div:nth-of-type(2) {
+#Home>section.reviews>div:nth-of-type(2) {
 	position: absolute;
 	left: 29%;
 	top: 29%;
 	width: 57%;
 }
 
-.reviews > div:nth-last-of-type(1) .review {
+.reviews>div:nth-last-of-type(1) .review {
 	width: 100%;
 	padding: 5% 6%;
 	position: relative;
 	border-radius: 10px;
-	background: linear-gradient(
-			0deg,
+	background: linear-gradient(0deg,
 			rgba(0, 0, 0, 0.07) 0%,
-			rgba(0, 0, 0, 0.07) 100%
-		),
-		linear-gradient(
-			299deg,
+			rgba(0, 0, 0, 0.07) 100%),
+		linear-gradient(299deg,
 			rgba(184, 217, 255, 0.8) -13.1%,
-			rgba(255, 255, 255, 0.8) 92.48%
-		);
+			rgba(255, 255, 255, 0.8) 92.48%);
 	backdrop-filter: blur(35px);
 }
 
-#Home > section.reviews > div:nth-last-of-type(1) > div > nav:nth-child(1) {
+#Home>section.reviews>div:nth-last-of-type(1)>div>nav:nth-child(1) {
 	color: var(--for-text, #353546);
 
 	font-size: 22px;
@@ -448,20 +471,20 @@
 	font-weight: 500;
 }
 
-#Home > section.reviews > div:nth-child(3) > div > nav:nth-child(1) > h3 {
+#Home>section.reviews>div:nth-child(3)>div>nav:nth-child(1)>h3 {
 	margin-bottom: 0;
 }
 
-#Home > section.reviews > div:nth-child(3) > div > nav:nth-child(1) > h6 {
+#Home>section.reviews>div:nth-child(3)>div>nav:nth-child(1)>h6 {
 	margin-top: 0;
 }
 
-#Home > section.reviews > div:nth-child(3) > div > nav:nth-child(2) {
+#Home>section.reviews>div:nth-child(3)>div>nav:nth-child(2) {
 	display: flex;
 	position: relative;
 }
 
-#Home > section.reviews > div:nth-child(3) > div > nav:nth-child(2) > p {
+#Home>section.reviews>div:nth-child(3)>div>nav:nth-child(2)>p {
 	color: var(--for-text, #353546);
 
 	font-size: calc(14px + 2%);
@@ -471,25 +494,20 @@
 	width: 90.5%;
 }
 
-#Home
-	> section.reviews
-	> div:nth-child(3)
-	> div
-	> nav:nth-child(2)
-	> svg:nth-child(3) {
+#Home>section.reviews>div:nth-child(3)>div>nav:nth-child(2)>svg:nth-child(3) {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
 
-#Home > section.reviews > div:nth-child(3) > svg {
+#Home>section.reviews>div:nth-child(3)>svg {
 	margin-left: 10%;
 }
 
 /* --------------------------------------------------------------- */
 /* build business*/
 /* ------------------------------------------------------------------- */
-#Home > section.buildBusiness {
+#Home>section.buildBusiness {
 	margin-top: 0;
 	background: var(--for-text, #353546);
 	display: flex;
@@ -499,21 +517,21 @@
 	padding: 4% 2%;
 }
 
-#Home > section.buildBusiness > div:nth-child(1) {
+#Home>section.buildBusiness>div:nth-child(1) {
 	width: 50%;
 }
 
-#Home > section.buildBusiness > div:nth-child(1) > h1 {
+#Home>section.buildBusiness>div:nth-child(1)>h1 {
 	color: #fff;
 
-	font-size: 35px;
+	font-size: calc(8px + 2vw);
 
 	font-weight: 700;
 	line-height: normal;
 	width: 65%;
 }
 
-#Home > section.buildBusiness > div:nth-child(1) > nav {
+#Home>section.buildBusiness>div:nth-child(1)>nav {
 	border-radius: 20px;
 	width: 100%;
 	overflow: hidden;
@@ -528,10 +546,10 @@
 	border: 0;
 }
 
-#Home > section.buildBusiness > div:nth-child(2) > h5 {
+#Home>section.buildBusiness>div:nth-child(2)>h5 {
 	color: #fff;
 
-	font-size: 22px;
+	font-size: calc(5px + 1vw);
 
 	font-weight: 400;
 	line-height: 30px;
@@ -540,33 +558,33 @@
 /* --------------------------------------------------------------- */
 /* Team */
 /* ------------------------------------------------------------------- */
-#Home > section.team {
+#Home>section.team {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 }
 
-
-
-#Home > section.team > div:nth-of-type(2){
+#Home>section.team>div:nth-of-type(2) {
 	display: flex;
-	gap: 2%;
+
+	width: 90%;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-#Home > section.team > .carts > .cart {
-	width: 22%;
+#Home>section.team>.carts>.cart {
 	margin: auto;
 	display: flex;
 	gap: 15px;
 	flex-direction: column;
 }
 
-#Home > section.team > .carts > .cart img {
+#Home>section.team>.carts>.cart img {
 	width: 100%;
 }
 
-#Home > section.team > .carts > .cart h4 {
+#Home>section.team>.carts>.cart h4 {
 	color: #000;
 
 	font-size: 18px;
@@ -576,7 +594,7 @@
 	line-height: 25px;
 }
 
-#Home > section.team > .carts > .cart h7 {
+#Home>section.team>.carts>.cart h7 {
 	color: #000;
 
 	font-size: 12px;
@@ -585,46 +603,48 @@
 	line-height: 16px;
 }
 
-#Home > section.team > .carts > .cart svg {
+#Home>section.team>.carts>.cart svg {
 	margin: 0 4px;
 }
 
 /* --------------------------------------------------------------- */
 /* best person  */
 /* ------------------------------------------------------------------- */
-#Home > section.bestEmployee {
+#Home>section.bestEmployee {
 	width: 85%;
 	margin: auto;
 }
 
-#Home > section.bestEmployee > div {
+#Home>section.bestEmployee>div {
 	display: flex;
 	border-radius: 20px;
 	background: var(--for-text, #353546);
 	margin: 60px 0;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	width: 100%;
 	align-items: center;
 }
 
-#Home > section.bestEmployee > div > h1 {
+#Home>section.bestEmployee>div>h1 {
 	color: #fff;
 
-	font-size: 40px;
+	font-size: calc(10px + 2vw);
 
 	font-weight: 700;
-	padding: 68px;
+
 	width: 22%;
-	padding-left: 0;
 }
 
-#Home > section.bestEmployee > div > div:nth-child(2) {
+#Home>section.bestEmployee>div>div:nth-child(2) {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-right: 109px;
 }
 
-#Home > section.bestEmployee > div > div:nth-child(2) > h5 {
+#Home>section.bestEmployee>div>div:nth-child(2)>h5 {
 	color: #fff;
 	text-align: center;
 
@@ -636,7 +656,7 @@
 	margin: 0;
 }
 
-#Home > section.bestEmployee > div > div:nth-child(2) > h6 {
+#Home>section.bestEmployee>div>div:nth-child(2)>h6 {
 	color: #fff;
 	text-align: center;
 	font-feature-settings: "salt" on;
@@ -648,31 +668,36 @@
 	margin: 0;
 }
 
-#Home > section.bestEmployee > div > div:nth-child(3) {
+#Home>section.bestEmployee>div>div:nth-child(3) {
 	position: relative;
 	bottom: -31px;
+	display: flex;
+	width: calc(40px + 12vw);
+	height: 201px;
+	justify-content: center;
 }
 
-#Home > section.bestEmployee > div > div:nth-child(3) > nav {
+#Home>section.bestEmployee>div>div:nth-child(3)>svg {
+	position: absolute;
+	top: 0;
+}
+
+#Home>section.bestEmployee>div>div:nth-child(3)>nav {
 	border-radius: 5px;
-	background: var(
-		--gred2,
-		linear-gradient(153deg, #19a5ff 16.85%, rgba(64, 106, 255, 0) 118.63%)
-	);
+	background: var(--gred2,
+			linear-gradient(153deg, #19a5ff 16.85%, rgba(64, 106, 255, 0) 118.63%));
 	display: flex;
-	position: relative;
-	bottom: 101px;
-	left: -25%;
-	width: 205px;
+	position: absolute;
+	bottom: 50%;
+	/* left: -8%; */
+	width: 70%;
 	padding: 14px 25px;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
 	flex-shrink: 0;
 	color: var(--gray-gray-50, #fafafa);
-
-	font-size: 18px;
-
+	font-size: calc(1px + 1vw);
 	font-weight: 400;
 	line-height: 25px;
 }
@@ -680,15 +705,17 @@
 /* --------------------------------------------------------------- */
 /* contactus */
 /* ------------------------------------------------------------------- */
-#Home > section.contactUs {
+#Home>section.contactUs {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 130px;
 }
 
-#Home > section.contactUs > div:nth-of-type(2) {
+#Home>section.contactUs>div:nth-of-type(2) {
 	margin-top: 60px;
 	overflow: hidden;
+	height: 77vh;
 	width: 85%;
 	display: flex;
 	flex-direction: row;
@@ -698,54 +725,55 @@
 	backdrop-filter: blur(15px);
 }
 
-#Home > section.contactUs > h1 {
+#Home>section.contactUs>h1 {
 	color: var(--for-text, #353546);
 	font-size: 40px;
 	margin: 0;
 	font-weight: 700;
 }
 
-#Home > section.contactUs > div > div.left {
+#Home>section.contactUs>div>div.left {
 	width: 55%;
-	padding: 35px;
+	padding: 0 35px;
 }
 
-#Home > section.contactUs > div > div.left > h1 {
+#Home>section.contactUs>div>div.left>h1 {
 	color: var(--1, #f00c18);
 
-	font-size: 40px;
+	font-size: calc(10px + 2vw);
 
 	font-weight: 700;
 	line-height: normal;
 }
 
-#Home > section.contactUs > div > div.left > h5 {
+#Home>section.contactUs>div>div.left>h5 {
 	color: var(--for-text, #353546);
 
-	font-size: 22px;
+	font-size: calc(5px + 1vw);
 
 	font-weight: 400;
 	line-height: 30px;
 }
 
-#Home > section.contactUs > div > div.left > form {
+#Home>section.contactUs>div>div.left>form {
 	display: flex;
 	flex-direction: column;
 }
 
-#Home > section.contactUs > div > div.left > form > label {
+#Home>section.contactUs>div>div.left>form>label {
 	color: var(--for-text, #353546);
 
-	font-size: 18px;
+	font-size: calc(9px + 0.5vw);
 
 	font-weight: 400;
 	line-height: 25px;
 }
 
-#Home > section.contactUs > div > div.left > form > input {
+#Home>section.contactUs>div>div.left>form>input {
 	border-radius: 15px;
 	background: #f5f5fa;
 	border: none;
+	margin-bottom: 10px;
 	box-shadow: -5px -5px 10px 0px #fff inset,
 		5px 5px 10px 0px rgba(170, 170, 204, 0.5) inset,
 		2px 2px 4px 0px rgba(170, 170, 204, 0.25) inset,
@@ -762,12 +790,7 @@
 	align-items: center;
 }
 
-#Home
-	> section.contactUs
-	> div
-	> div.left
-	> form
-	> input[type="text"]:nth-child(6) {
+#Home>section.contactUs>div>div.left>form>input[type="text"]:nth-child(6) {
 	display: inline-flex;
 	height: 7px;
 	padding: 28px 62px 122px 34px;
@@ -775,7 +798,7 @@
 	flex-shrink: 0;
 }
 
-#Home > section.contactUs > div > div.left > form > button {
+#Home>section.contactUs>div>div.left>form>button {
 	padding: 10px 15px 14px 16px;
 	border-radius: 32px;
 	background: var(--3, #406aff);
@@ -787,11 +810,12 @@
 	font-style: normal;
 	border: none;
 	line-height: 16px;
-	margin-top: 20px;
-	width: 27%;
+	position: absolute;
+	bottom: 35px;
+	cursor: pointer;
 }
 
-#Home > section.contactUs > div > div.right {
+#Home>section.contactUs>div>div.right {
 	background: var(--3, #406aff);
 	position: relative;
 	width: 45%;
@@ -799,20 +823,20 @@
 	padding-right: 10px;
 }
 
-#Home > section.contactUs > div > div.right > svg {
+#Home>section.contactUs>div>div.right>svg {
 	position: absolute;
-	left: -2px;
+	left: 0;
 	height: 100%;
 }
 
-#Home > section.contactUs > div > div.right > div > h1 {
+#Home>section.contactUs>div>div.right>div>h1 {
 	color: #fff;
 	font-size: calc(11px + 2vw);
 	font-weight: 400;
 	line-height: 45px;
 }
 
-#Home > section.contactUs > div > div.right > div > p {
+#Home>section.contactUs>div>div.right>div>p {
 	color: #fff;
 
 	font-size: 18px;
@@ -821,7 +845,7 @@
 	line-height: 25px;
 }
 
-#Home > section.contactUs > div > div.right > div > div {
+#Home>section.contactUs>div>div.right>div>div {
 	color: #fff;
 
 	font-size: 18px;
@@ -831,15 +855,72 @@
 	margin-top: 25%;
 }
 
-#Home > section.contactUs > div > div.right > div > div > nav > span {
+#Home>section.contactUs>div>div.right>div>div>nav>span {
 	margin-left: 17px;
 }
 
-#Home > section.contactUs > div > div.right > div > nav {
+#Home>section.contactUs>div>div.right>div>nav {
 	margin-top: 19%;
 	margin-left: 22%;
 }
 
-#Home > section.contactUs > div > div.right > div > nav > svg {
+#Home>section.contactUs>div>div.right>div>nav>svg {
 	margin: 4px;
+}
+
+@media screen and (max-width: 775px) {
+	#Home>section.reviews {
+		flex-direction: column;
+	}
+
+	#Home>section.contactUs>div:nth-child(2),
+	#Home>section.contactUs>div:nth-child(2)>div.left,
+	#Home>section.contactUs>div:nth-child(2)>div.right {
+		height: auto;
+		padding: 0;
+		margin: auto;
+		flex-direction: column;
+	}
+	#Home>section.contactUs>div:nth-child(2)>div.left{
+		width: 90%;
+	}
+	#Home>section.contactUs>div:nth-child(2)>div.right{
+		width: 100%;
+	}
+
+	#Home>section.contactUs>div:nth-child(2)>div.right>div>div,
+	#Home>section.contactUs>div:nth-child(2)>div.right>div>nav {
+		margin: 0%;
+	}
+
+	#Home>section.contactUs>div:nth-child(2)>div.right>div {
+		text-align: center;
+	}
+	#Home > section.contactUs > div:nth-child(2) > div.right > svg{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 567px) {
+	#Home>section.bestEmployee>div {
+		flex-direction: column;
+	}
+
+	#Home>section.reviews>img {
+		display: none;
+	}
+
+	#Home>section.reviews>div:nth-child(2)>h1 {
+		width: 80%;
+	}
+
+	#Home>section.reviews>div:nth-child(2)>p {
+		width: 85%;
+	}
+
+	#Home>section.reviews>div:nth-child(3) {
+		position: static;
+		width: 100%;
+		margin: -25px;
+	}
 }
